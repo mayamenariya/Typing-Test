@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="typing speed.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Typing Speed Test</h1>
+    
+    <p id="introParagraph">
+      Welcome to the Typing Speed Test! Test your typing speed by selecting the time duration and start typing the provided text. Your typing speed will be measured in words per minute (WPM). Try to type as accurately and quickly as possible!
+    </p>
+    <div>
+      <label for="timeSelect">Select Time: </label>
+      <select id="timeSelect">
+        <option value="30">30 seconds</option>
+        <option value="60" selected>60 seconds</option>
+        <option value="120">120 seconds</option>
+      </select>
+    </div>
+    <div class="timer" id="timer">60</div>
+    <div class="text" id="textToType">
+      The quick brown fox jumps over the lazy dog.
+    </div>
+    <input type="text" class="input-box" id="inputBox"  disabled>
+    <div class="buttons">
+      <button id="startTest">Start Test</button>
+      <button id="resetTest">Reset Test</button>
+      <button id="toggleDarkMode">Dark Mode</button>
+      <button id="viewHistory">View History</button> 
+    </div>
+    <p id="results"></p>
+    <div id="historyContainer">
+      <h3>Typing History</h3>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="typing speed.js"></script>
+</body>
+</html>

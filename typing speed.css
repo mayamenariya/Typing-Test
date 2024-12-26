@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 50px;
+  background-color: cadetblue;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+#timer {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.buttons button {
+  margin: 10px 5px;
+}
+
+#viewHistory {
+  margin-top: 20px;
+}
+
+
+#historyContent {
+  margin-top: 20px;
+  display: none; /* Initially hidden */
+  font-size: 14px;
+  color: #333;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+#historyList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#historyList li {
+  padding: 5px;
+  border-bottom: 1px solid #fb7a7a;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+#historyList .time {
+  font-size: 14px;
+  color: #888;
+  margin-left: 10px; 
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 15px; 
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .container {
+  background-color: #1e1e1e;
+  border-color: #444;
+}
+
+#introParagraph {
+  font-size: 16px;
+  color: #555;
+  margin-top: 20px;
+  line-height: 1.6;
+}
